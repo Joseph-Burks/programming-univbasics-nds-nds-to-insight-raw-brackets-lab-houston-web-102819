@@ -31,7 +31,6 @@ def directors_totals(nds)
       hash[director_name] += nds[out_index][:movies][in_index][:worldwide_gross]
       in_index += 1
     end
-    hash << nds[out_index][:name] => total
     out_index += 1
   end
   hash
