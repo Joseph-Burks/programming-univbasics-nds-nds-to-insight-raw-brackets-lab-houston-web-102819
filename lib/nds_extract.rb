@@ -24,6 +24,7 @@ def directors_totals(nds)
   hash = {}
   out_index = 0
   while out_index < nds.length do
+    
     total = 0
     in_index = 0
     while in_index < nds[out_index][:movies].length do
