@@ -18,5 +18,14 @@ def directors_totals(nds)
   #
   #
   # Be sure to return the result at the end!
-  puts directors_database
+  # [
+  #  {:name => "string", :movies => [
+  #    {:title, :studio, :worldwide_gross, :release year},{},{}]}
+  #  {:,: => [{::::},{::::}{::::}]} 
+  hash = {}
+  out_index = 0
+  while out_index < directors_database.length do
+    in_index = 0
+    while in_index < directors_database[out_index][:movies].length do
+      
 end
