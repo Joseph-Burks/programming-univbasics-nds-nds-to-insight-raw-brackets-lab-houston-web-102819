@@ -24,11 +24,11 @@ def directors_totals(nds)
   hash = {}
   out_index = 0
   while out_index < nds.length do
-    
-    total = 0
+    director_name = nds[out_index][:name]
+    hash[director_name] = 0
     in_index = 0
     while in_index < nds[out_index][:movies].length do
-      total += nds[out_index][:movies][in_index][:worldwide_gross]
+      hash[director_name] += nds[out_index][:movies][in_index][:worldwide_gross]
       in_index += 1
     end
     hash << nds[out_index][:name] => total
